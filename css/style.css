@@ -5,6 +5,28 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.dokdo {
+  font-family: 'East Sea Dokdo', cursive !important;
+}
+.c-menu {
+  letter-spacing: 5px;
+  font-size: 60px;
+}
+.c-title {
+  letter-spacing: 5px;
+
+}
+.c-sub {
+
+}
+
+@media screen and (max-width: 768px) {
+  .c-menu {
+    font-size: 40px;
+  }
+}
+
 /* =======================================================
 *
 * 	Template Style 
@@ -125,7 +147,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline;
 }
 .fh5co-nav ul li a {
-  font-size: 14px;
+  font-size: 20px;
   padding: 30px 10px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
@@ -850,14 +872,14 @@ form label {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 40px;
+    font-size: 45px;
   }
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 30px;
+    font-size: 45px;
   }
 }
 #fh5co-header .display-tc h2,
