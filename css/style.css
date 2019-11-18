@@ -692,7 +692,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 #fh5co-gallery-list li a {
-  min-height: 400px;
+  min-height: 270px;
   padding: 2em;
   position: relative;
   width: 100%;
@@ -1663,7 +1663,7 @@ form label {
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav-toggle {
-    display: block;
+    display: none;
   }
 }
 
