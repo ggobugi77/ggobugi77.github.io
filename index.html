@@ -81,6 +81,9 @@
   function storeData() {
 		let name = $('#name').val();
 		let number = $('#number').val();
+		if(name == '' || number == '') {
+			alert('이름 & 인원을 모두 입력해주세요 :)');
+		}
 		db.collection("saeha").add({
 		    name: name,
 		    number: number
