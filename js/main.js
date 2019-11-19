@@ -2,6 +2,15 @@
 	
 	'use strict';
 
+
+
+
+
+	
+
+
+	  
+
 	var mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
@@ -181,7 +190,7 @@
 		});
 	
 	};
-
+	
 
 	// Loading page
 	var loaderPage = function() {

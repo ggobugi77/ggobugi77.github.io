@@ -64,6 +64,37 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
+<script type="text/javascript">
+
+	// Your web app's Firebase configuration
+	firebase.initializeApp({
+  apiKey: "AIzaSyCGppr5fMAEqWAp69Yu1ltw3QISDg5UWJ8",
+  authDomain: 'saeha-c14c7.firebaseapp.com',
+  projectId: 'saeha-c14c7'
+});
+
+  // Initialize Firebase
+  var db = firebase.firestore();
+
+  function storeData() {
+		let name = $('#name').val();
+		let number = $('#number').val();
+		db.collection("saeha").add({
+		    name: name,
+		    number: number
+		})
+		.then(function(docRef) {
+		    alert('감사합니다 :)');
+		})
+		.catch(function(error) {
+		    console.error("Error adding document: ", error);
+		});
+
+	}
+
+</script>
 
 	</head>
 	<body>
@@ -482,7 +513,7 @@
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2 class=" song-myung">오실수 있나요?</h2>
-					<p class=" song-myung" style="color:white;">참석 인원확인을 위해 이름과 인원을 적어주시면 감사하겠습니다!</p>
+					<p class=" song-myung" style="color:white;">귀한 걸음 해주신 관객분들께 감사의 의미로 </br> 작은 답례품을 하려합니다 :)</br> 와주시는 분의 성함과 인원수를 알려주시면 감사하겠습니다.</p>
 				</div>
 			</div>
 			<div class="row animate-box">
@@ -497,11 +528,11 @@
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
 								<label for="name" class="sr-only">인원</label>
-								<input type="name" class="form-control" id="name" placeholder="인원">
+								<input type="name" class="form-control" id="number" placeholder="인원">
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">확인</button>
+							<button type="button" onclick="storeData()" class="btn btn-default btn-block">확인</button>
 						</div>
 					</form>
 				</div>
