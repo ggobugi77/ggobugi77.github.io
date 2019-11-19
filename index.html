@@ -83,17 +83,19 @@
 		let number = $('#number').val();
 		if(name == '' || number == '') {
 			alert('이름 & 인원을 모두 입력해주세요 :)');
+		} else {
+			db.collection("saeha").add({
+			    name: name,
+			    number: number
+			})
+			.then(function(docRef) {
+			    alert('감사합니다 :)');
+			})
+			.catch(function(error) {
+			    console.error("Error adding document: ", error);
+			});
 		}
-		db.collection("saeha").add({
-		    name: name,
-		    number: number
-		})
-		.then(function(docRef) {
-		    alert('감사합니다 :)');
-		})
-		.catch(function(error) {
-		    console.error("Error adding document: ", error);
-		});
+		
 
 	}
 
