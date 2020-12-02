@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -6,7 +7,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>전문사 졸업연주회</title>
+	<title>수한 & 새하 청첩장</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -37,9 +38,13 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
-	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Song+Myung&display=swap" rel="stylesheet">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Yellowtail&display=swap" rel="stylesheet">
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -47,16 +52,13 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
+	
+	<link rel="stylesheet" href="css/style.css">
 
-	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css?v=1">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -64,550 +66,167 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
-<script type="text/javascript">
-
-	// Your web app's Firebase configuration
-	firebase.initializeApp({
-  apiKey: "AIzaSyCGppr5fMAEqWAp69Yu1ltw3QISDg5UWJ8",
-  authDomain: 'saeha-c14c7.firebaseapp.com',
-  projectId: 'saeha-c14c7'
-});
-
-  // Initialize Firebase
-  var db = firebase.firestore();
-
-  function storeData() {
-		let name = $('#name').val();
-		let number = $('#number').val();
-		if(name == '' || number == '') {
-			alert('이름 & 인원을 모두 입력해주세요 :)');
-		} else {
-			db.collection("saeha").add({
-			    name: name,
-			    number: number
-			})
-			.then(function(docRef) {
-			    alert('감사합니다 :)');
-			})
-			.catch(function(error) {
-			    console.error("Error adding document: ", error);
-			});
-		}
-		
-
-	}
-
-</script>
 
 	</head>
 	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+	
+		<div class="fh5co-hero" data-section="home">
+			<div class="fh5co-overlay"></div>
+			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_1.jpg);">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="container">
+							<div class="col-md-10 col-md-offset-1">
+								<div class="animate-box">
+									<h1 class="wedding-font">The Wedding</h1>
+									<h2 class="korean-header">수한 &amp; 새하</h2>
+									<p><span>2021.02.06</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<header id="fh5co-header-section" class="sticky-banner" style="display:none">
+			<div class="container">
+				<div class="nav-header">
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+					<h1 id="fh5co-logo"><a href="index.html">Nuptial</a></h1>
+					<!-- START #fh5co-menu-wrap -->
+					<nav id="fh5co-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="fh5co-primary-menu">
+							<li class="active"><a href="index.html" >Home</a></li>
+							<li>
+								<a href="groom-bride.html" class="fh5co-sub-ddown">Groom &amp; Bride</a>
+								<ul class="fh5co-sub-menu">
+									<li><a href="https://freehtml5.co/wedding-free-html5-bootstrap-template-for-wedding-websites/">Wedding Template</a></li>
+									<li><a href="https://freehtml5.co/marble-free-html5-bootstrap-template-for-portfolio-or-multi-purpose-websites/">Marble Template</a></li>
+									<li><a href="https://freehtml5.co/tasty-free-bootstrap-html5-template-for-restaurant-websites/">Tasty Template</a></li>
+									<li><a href="https://freehtml5.co/education-free-html5-bootstrap-template-elearning-school-websites/">Education Template</a></li>
+									<li><a href="https://freehtml5.co/words-free-html5-bootstrap-template-multi-purpose/">Words Template</a></li>
+								</ul>
+							</li>
+							<li><a href="when-where.html">When &amp; Where</a></li>
+							<li><a href="guest.html">Guest</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="blog.html">Blog</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<!-- end:header-top -->
 		
-	<div class="fh5co-loader"></div>
-	
-	<div id="page">
-	<!-- <nav class="fh5co-nav" role="navigation">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-7">
-					<div id="fh5co-logo jejuhallasan"><a href="" class="dokdo c-menu"></a></div>
-				</div>
-				<div class="col-xs-5 text-right menu-1 dokdo">
-					<ul>
-						<li class="active"><a href="index.html">홈</a></li>
-						<li ><a href="index.html">설명</a></li>
-						<li><a href="contact.html">오시는 길</a></li>
-					</ul>
-				</div>
-			</div>
-			
-		</div>
-	</nav> -->
-
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/sae_ha.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1 class="c-title song-myung" style="margin-top: 200px;">전문사 졸업연주회</h1>
-							<h2 class="c-sub song-myung">손새하</h2>
-							<!-- <div class="simply-countdown simply-countdown-one"></div> -->
-
-							
+		<div id="fh5co-couple" class="fh5co-section-gray">
+			<div class="container">
+				<div class="row row-bottom-padded-md animate-box">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<div class="col-md-5 col-sm-5 col-xs-5 nopadding">
+							<img src="images/groom.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+							<h3>Jack Wood</h3>
+						</div>
+						<div class="col-md-2 col-sm-2 col-xs-2 nopadding"><h2 class="amp-center"><i class="icon-heart"></i></h2></div>
+						<div class="col-md-5 col-sm-5 col-xs-5 nopadding">
+							<img src="images/bride.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+							<h3>Rose Thomas</h3>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</header>
-
-	<!-- <div id="fh5co-couple">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>Hello!</h2>
-					<h3>November 28th, 2016 New York, USA</h3>
-					<p>We invited you to celebrate our wedding</p>
-				</div>
-			</div>
-			<div class="couple-wrap animate-box">
-				<div class="couple-half">
-					<div class="groom">
-						<img src="images/groom.jpg" alt="groom" class="img-responsive">
-					</div>
-					<div class="desc-groom">
-						<h3>Joefrey Mahusay</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
-					</div>
-				</div>
-				<p class="heart text-center"><i class="icon-heart2"></i></p>
-				<div class="couple-half">
-					<div class="bride">
-						<img src="images/bride.jpg" alt="groom" class="img-responsive">
-					</div>
-					<div class="desc-bride">
-						<h3>Sheila Mahusay</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
-	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			
-			<div class="row">
-				<div class="display-t">
-					<div class="display-tc">
-						<div class="col-md-10 col-md-offset-1">
-							<div>
-								<image src="images/saeha/cal_nov3.png" style="width:92vw;"/>
-								<!-- <image src="images/saeha/nov_calendar.png" style="width:92vw;"/> -->
-							</div>
-							<div class="col-md-6 col-sm-6 text-center" style="margin-top: 30px;">
-								<div class="event-wrap animate-box  song-myung">
-									<h3 class="song-myung">공연일시</h3>
-									<div class="event-col">
-										<i class="icon-clock"></i>
-										<span>2:30 PM</span>
-									</div>
-									<div class="event-col">
-										<i class="icon-calendar"></i>
-										<span>2019년 토요일</span>
-										<span>11월 30일</span>
-									</div>
-									<p>손새하의 졸업연주회에 초대합니다. </p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="display-t">
-					<div class="display-tc">
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon" style="background-image: url(images/saeha/saeha.jpg); background-repeat: no-repeat; background-position: center; background-size: 297px 392px;">
-									<div class="timeline-badge" ></div>
-								</span>
-
-
-								<span class="counter song-myung">손새하</span>
-								<span class="counter-label  song-myung" style="font-size: 14px;text-align:left">
-									<p>국립국악중 · 고등학교 졸업</p>
-									<p>한국예술종합학교<br/>예술사 졸업 및 전문사 재학</p>
-									<p>국가무형문화재 제46호 <br/>피리정악 및 대취타 보존회 전수자</p>
-									<p>2013 제 29회 동아국악콩쿠르 <br/>학생부 금상</p>
-									<p>2016 제 32회 동아국악콩쿠르 <br/>일반부 금상</p>
-									<p>2019 제 39회 온나라국악경연대회 <br/>국무총리상 수상</p>
-								</span>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- <div id="fh5co-services" class="fh5co-section-gray">
-		<div class="container">
-			
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Program</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6">
-					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-						<span class="icon">
-							<i class="icon-music"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>손새하</h3>
-							<p>- 국립국악중 · 고등학교 졸업</p>
-							<p>- 한국예술종합학교 예술사 졸업 및 전문사 재학</p>
-							<p>- 국가무형문화재 제46호 피리정악 및 대취타 보존회 전수자</p>
-							<p>- 제 29회 동아국악콩쿠르 학생부 금상</p>
-							<p>- 제 32회 동아국악콩쿠르 일반부 금상</p>
-							<p>- 제 39회 온나라국악경연대ㅑ회 국무총리상 수상</p>
-						</div>
-					</div>
-					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-						<span class="icon">
-							<i class="icon-music"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>사사 <span style="font-size: 11px;">(가나다 순)</span></h3>
-							<p>강영근 곽태규 김 철 윤형욱</p> <p> 이건회 이호진 한세현</p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-			
-		</div>
-	</div> -->
-
-	<div id="fh5co-couple-story" class="fh5co-section-gray">
-		<div class="container ">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<!-- <span>We Love Each Other</span> -->
-					<h2>Program</h2>
-				<!-- 	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline animate-box">
-						<li class="animate-box">
-							<div class="timeline-badge" style="background-image:url(images/saeha/tps.png);
-							background-position-y: 0px; background-position-x: -6px; background-size: 115px;"></div>
-							<div class="timeline-panel song-myung">
-								<div class="timeline-heading">
-									<h3 class="timeline-title song-myung">대취타</h3>
-								</div>
-								<div class="timeline-body song-myung">
-									<p><span  style="margin-right: 20px; color:#ABABAB">태평소</span>손새하</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge" style="background-image:url(images/saeha/seo.png);
-							background-position-y: 0px; background-position-x: -6px; background-size: 87px;"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title song-myung">상령산풀이</h3>
-								</div>
-								<div class="timeline-body song-myung">
-									<p><span  style="margin-right: 4px; color:#ABABAB; letter-spacing: 15px;">피리</span>손새하</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge" style="background-image:url(images/saeha/piri.png);
-							    background-position-y: -32px;background-position-x: 0px;background-size: 60px;"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title song-myung">천년만세</h3>
-								</div>
-								<div class="timeline-body song-myung">
-									<p><span  style="margin-right: 20px; color:#ABABAB;">새피리</span>손새하</p>
-									<p><span  style="margin-right: 20px; color:#ABABAB;">가야금</span>하병훈</p>
-									<p><span  style="margin-right: 4px; color:#ABABAB; letter-spacing: 15px;">장구</span>양성태</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge" style="background-image:url(images/saeha/sh.png);
-							    background-position-y: -42px;background-position-x: 0px;background-size: 60px;"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title song-myung">화유</h3>
-								</div>
-								<div class="timeline-body song-myung">
-								
-									<p><span  style="margin-right: 4px; color:#ABABAB; letter-spacing: 15px;">생황</span>손새하</p>
-									<p><span  style="margin-right: 4px; color:#ABABAB; letter-spacing: 15px;">단소</span>김태환</p>
-									<p><span  style="margin-right: 20px; color:#ABABAB;">피아노</span>김청림</p>
-									<p><span  style="margin-right: 4px; color:#ABABAB; letter-spacing: 15px;">타악</span>양성태</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge" style="background-image:url(images/saeha/piri.png);
-							    background-position-y: -69px;background-position-x: 0px;background-size: 60px;"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title song-myung">긴아리랑</h3>
-								</div>
-								<div class="timeline-body song-myung">
-								
-									<p><span  style="margin-right: 4px; color:#ABABAB; letter-spacing: 15px;">피리</span>손새하</p>
-									
-									<p><span  style="margin-right: 20px; color:#ABABAB;">피아노</span>김청림</p>
-								
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge" style="background-image:url(images/saeha/piri.png);
-							    background-position-y: -164px;background-position-x: 0px;background-size: 60px;"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title song-myung">간 間</h3>
-								</div>
-								<div class="timeline-body song-myung">
-								
-									<p><span  style="margin-right: 4px; color:#ABABAB; letter-spacing: 15px;">피리</span>손새하</p>
-									
-									<p><span  style="margin-right: 4px; color:#ABABAB; letter-spacing: 15px;">기타</span>김주현</p>
-								
-								</div>
-							</div>
-						</li>
-
-			    	</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	
-
-	<div id="fh5co-gallery" class="fh5co-section-gray">
-		<div class="container">
-			<!-- <div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>Our Memories</span>
-					<h2>Wedding Gallery</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-				</div>
-			</div> -->
-			<div class="row row-bottom-padded-md">
-				<div class="col-md-12">
-					<ul id="fh5co-gallery-list" style="max-height: 250px;">
-						
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style=" "> 
-							<a>
-								
-								<div class="case-studies-summary  song-myung">
-									<!-- <span>14 Photos</span> -->
-									<h2 class=" song-myung">사사</h2>
-									<span>강영근 곽태규 김 철 윤형욱 이건회 이호진 한세현</span>
-									<br/>
-
-									<br/>
-									<br/>
-									<h2 class=" song-myung">도움주신분들</h2>
-									<div>
-										<span>
-											<span style="color:white">무대 및 음향 _</span>   최 균<br/>
-											<span style="color:white">사진 및 영상 _</span>   우인제 <br/>
-											<span style="color:white">스 텝 _</span>   김현승 김시헌<br/>
-											<span style="color:white">디자인 _</span> 임수한
-										</span>
-									</div>
-									
-								</div>
-							</a>
-						</li>
-			
-					</ul>		
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- 
-
-	<div id="fh5co-testimonial">
-		<div class="container">
-			<div class="row">
 				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<span>Best Wishes</span>
-						<h2>Friends Wishes</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 animate-box">
-						<div class="wrap-testimony">
-							<div class="owl-carousel-fullwidth">
-								<div class="item">
-									<div class="testimony-slide active text-center">
-										<figure>
-											<img src="images/couple-1.jpg" alt="user">
-										</figure>
-										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-										<blockquote>
-											<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"</p>
-										</blockquote>
-									</div>
-								</div>
-								<div class="item">
-									<div class="testimony-slide active text-center">
-										<figure>
-											<img src="images/couple-2.jpg" alt="user">
-										</figure>
-										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-										<blockquote>
-											<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, at the coast of the Semantics, a large language ocean."</p>
-										</blockquote>
-									</div>
-								</div>
-								<div class="item">
-									<div class="testimony-slide active text-center">
-										<figure>
-											<img src="images/couple-3.jpg" alt="user">
-										</figure>
-										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-										<blockquote>
-											<p>"Far far away, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
-										</blockquote>
-									</div>
-								</div>
-							</div>
+					<div class="col-md-8 col-md-offset-2">
+						<div class="col-md-12 text-center heading-section">
+							<h2>Are Getting Married</h2>
+							<p><strong>on Dec 28, 2017 &mdash; Boracay, Philippines</strong></p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div> -->
-
-	<div id="fh5co-started" class="fh5co-section-gray">
-		<div class=""></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2 style="color:#000" class=" song-myung">오시는 길</h2>
-					<a style="color:#828282; font-size:18px" href="https://v4.map.naver.com/?searchCoord=e82e91793599e8627490212f1bef3f79dd52365d3d48431602f64c5cc242558b&query=7ZWc7JiI7KKFIOyYiOyIoOq3ueyepQ%3D%3D&tab=1&lng=a0447d861057dd3de51ef20dbe158900&mapMode=0&mpx=1e475d89f38c5bbe4c717de41ea02155bb2ee8f7ec85fb0b52fd0ea1b89a9de9ffb8e728fd304fbf7b393f4868442fb515fa3b57b4123f63b2bc8acb41a7afab&lat=5ca25b8a6484bbf7e549bae15381e49a&dlevel=12&enc=b64&menu=location" class=" song-myung">서울특별시 성북구 화랑로32길 146-37 <i class="icon-location2"></i></a>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<!-- <table cellpadding="0" cellspacing="0" max-width="95vw"> -->
-				<div class="col-md-10 col-md-offset-1">
-						<table cellpadding="0" cellspacing="0" max-width="95vw"> <tr> <td style="border:1px solid #cecece;"><a href="https://v4.map.naver.com/?searchCoord=e82e91793599e8627490212f1bef3f79dd52365d3d48431602f64c5cc242558b&query=7ZWc7JiI7KKFIOyYiOyIoOq3ueyepQ%3D%3D&tab=1&lng=24113cd9b8bb3c5238c7b029a44d55e9&mapMode=0&mpx=1e475d89f38c5bbe4c717de41ea02155bb2ee8f7ec85fb0b52fd0ea1b89a9de9ffb8e728fd304fbf7b393f4868442fb515fa3b57b4123f63b2bc8acb41a7afab&lat=a8be4f3011699f22d085b2628a6b631b&dlevel=12&enc=b64&menu=location" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1572681942672_209040658" width="100%" height="340" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></td> </tr> <tr> <td> <table cellpadding="0" cellspacing="0" width="100%"> <tr> <td height="30" bgcolor="#f9f9f9" align="left" style="padding-left:9px; border-left:1px solid #cecece; border-bottom:1px solid #cecece;"> <span style="font-family: tahoma; font-size: 11px; color:#666;">2019.11.2</span>&nbsp;<span style="font-size: 11px; color:#e5e5e5;">|</span>&nbsp;<a style="font-family: dotum,sans-serif; font-size: 11px; color:#666; text-decoration: none; letter-spacing: -1px;" href="https://v4.map.naver.com/?searchCoord=e82e91793599e8627490212f1bef3f79dd52365d3d48431602f64c5cc242558b&query=7ZWc7JiI7KKFIOyYiOyIoOq3ueyepQ%3D%3D&tab=1&lng=24113cd9b8bb3c5238c7b029a44d55e9&mapMode=0&mpx=1e475d89f38c5bbe4c717de41ea02155bb2ee8f7ec85fb0b52fd0ea1b89a9de9ffb8e728fd304fbf7b393f4868442fb515fa3b57b4123f63b2bc8acb41a7afab&lat=a8be4f3011699f22d085b2628a6b631b&dlevel=12&enc=b64&menu=location" target="_blank">지도 크게 보기</a> </td> <td width="98" bgcolor="#f9f9f9" align="right" style="text-align:right; padding-right:9px; border-right:1px solid #cecece; border-bottom:1px solid #cecece;"> <span style="float:right;"><span style="font-size:9px; font-family:Verdana, sans-serif; color:#444;">&copy;&nbsp;</span>&nbsp;<a style="font-family:tahoma; font-size:9px; font-weight:bold; color:#2db400; text-decoration:none;" href="https://www.navercorp.com" target="_blank">NAVER Corp.</a></span> </td> </tr> </table> </td> </tr> </table>
+		<div id="fh5co-countdown">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center animate-box">
+					<p class="countdown">
+						<span id="days"></span>
+						<span id="hours"></span>
+						<span id="minutes"></span>
+						<span id="seconds"></span>
+					</p>
 				</div>
 			</div>
 		</div>
-	</div>
-	
 
-
-	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_5.jpg);">
+		<div id="fh5co-started" style="background-image:url(images/cover_bg_2.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2 class=" song-myung">오실수 있나요?</h2>
-					<p class=" song-myung" style="color:white;">귀한 걸음 해주신 관객분들께 감사의 의미로 </br> 작은 답례품을 하려합니다 :)</br> 와주시는 분의 성함과 인원수를 알려주시면 감사하겠습니다.</p>
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section">
+						<h2>Are You Attending?</h2>
+						<p>Please Fill-up the form to notify you that you're attending. Thanks.
+					</div>
 				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline song-myung">
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="name" class="sr-only">이름</label>
-								<input type="name" class="form-control" id="name" placeholder="이름">
+				<div class="row animate-box">
+					<div class="col-md-10 col-md-offset-1">
+						<form class="form-inline">
+							<div class="col-md-4 col-sm-4">
+								<div class="form-group">
+									<label for="name" class="sr-only">Name</label>
+									<input type="name" class="form-control" id="name" placeholder="Name">
+								</div>
 							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="name" class="sr-only">인원</label>
-								<input type="name" class="form-control" id="number" placeholder="인원">
+							<div class="col-md-4 col-sm-4">
+								<div class="form-group">
+									<label for="email" class="sr-only">Email</label>
+									<input type="email" class="form-control" id="email" placeholder="Email">
+								</div>
 							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<button type="button" onclick="storeData()" class="btn btn-default btn-block">확인</button>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="row copyright">
-				<div class="col-md-12 text-center" style="margin-top: 30px;">
-					<p>
-						<small class="block song-myung" style="color:white">이 공연은 한국예술종합학교 전통예술원 예술전문사를 <br/> 졸업하기 위한 필수과정입니다.</small> 
-					</p>
-					<p>
-<!-- 						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul> -->
-					</p>
+							<div class="col-md-4 col-sm-4">
+								<button type="submit" class="btn btn-primary btn-block">I am Attending</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	</div>
+		
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h2>Jack &amp; Rose</h2>
+						</div>
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<p class="fh5co-social-icons">
+								<a href="#"><i class="icon-twitter2"></i></a>
+								<a href="#"><i class="icon-facebook2"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-dribbble2"></i></a>
+								<a href="#"><i class="icon-youtube"></i></a>
+							</p>
+							<p>Copyright 2016 Free Html5 <a href="#">Module</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a> / Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-	</div>
 	
+
+	</div>
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
-
-	<!-- Stellar -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-
-	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
-	<script src="js/simplyCountdown.js"></script>
-	<!-- Main -->
-	<script src="js/main.js"></script>
-
-	<script>
-    var d = new Date('2019-11-30 16:00:00');
-
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
-</script>
-
+	<script src="dist/scripts.min.js"></script>
 	</body>
 </html>
 
